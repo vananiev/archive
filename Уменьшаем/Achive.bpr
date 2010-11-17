@@ -27,7 +27,7 @@
     <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
     <RELEASELIBPATH value="$(BCB)\lib\release"/>
     <LINKER value="ilink32"/>
-    <USERDEFINES value="_DEBUG"/>
+    <USERDEFINES value=""/>
     <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
     <MAINSOURCE value="Achive.bpf"/>
     <INCLUDEPATH value="D:\Documents\Projects\Архиватор;$(BCB)\include;$(BCB)\include\vcl"/>
@@ -37,13 +37,12 @@
   </MACROS>
   <OPTIONS>
     <IDLCFLAGS value="-ID:\Documents\Projects\Архиватор -I$(BCB)\include -I$(BCB)\include\vcl 
-      -src_suffix cpp -D_DEBUG -boa"/>
-    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -tWC 
-      -tWM- -c"/>
-    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+      -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -tWC -tWC- -c"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
     <RFLAGS value=""/>
-    <AFLAGS value="/mx /w2 /zi"/>
-    <LFLAGS value="-D&quot;&quot; -ap -Tpe -x -Gn -v"/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -ap -Tpe -x -Gn"/>
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>
@@ -67,7 +66,7 @@ AutoIncBuild=1
 MajorVer=0
 MinorVer=0
 Release=0
-Build=198
+Build=13
 Debug=0
 PreRelease=0
 Special=0
@@ -79,7 +78,7 @@ CodePage=1251
 [Version Info Keys]
 CompanyName=Виталий Ананьев
 FileDescription=
-FileVersion=0.0.0.198
+FileVersion=0.0.0.13
 InternalName=
 LegalCopyright=
 LegalTrademarks=
